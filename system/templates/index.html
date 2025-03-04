@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}  
+Home Page 
+{% endblock title %} 
+
+{% block content %}
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">Welcome to My Django Study Project</h1>
+            <p class="text-lg text-gray-600 mt-2">Exploring the world of web development with Django</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">What is Django?</h2>
+                <p class="text-gray-700">
+                    Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel.
+                </p>
+                <ul class="list-disc list-inside mt-4 text-gray-700">
+                    <li>Rapid Development</li>
+                    <li>Clean and Pragmatic Design</li>
+                    <li>Built-in Security</li>
+                    <li>Scalability</li>
+                </ul>
+            </section>
+
+            <section class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">What will you find here?</h2>
+                <p class="text-gray-700">
+                    In this project, you'll find practical examples and tutorials on various aspects of Django, including:
+                </p>
+                <ul class="list-disc list-inside mt-4 text-gray-700">
+                    <li>Creating Models and Migrations</li>
+                    <li>Developing Views and Templates</li>
+                    <li>User Management and Authentication</li>
+                    <li>Forms and Validations</li>
+                    <li>Database Integration</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="text-center mt-8 text-gray-500">
+            <p>&copy; 2024 My Django Project. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+{% endblock content %}
